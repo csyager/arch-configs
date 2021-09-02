@@ -191,7 +191,7 @@ workspace 1 output DP-0
 workspace 2 output HDMI-0
 
 # feh config
-exec_always --no-startup-id feh --bg-scale '/home/connor/images/desktop/arch_background.png'
+exec_always --no-startup-id feh --bg-scale '/home/connor/images/desktop/dark_logo.png'
 for_window [class="^.*"] border pixel 0
 hide_edge_borders both
 

@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #282a36
+background = #77282a36
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #16db65
@@ -230,13 +230,12 @@ interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = #7fe178 
 label-connected = %essid%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
+format-disconnected = <label-disconnected>
+format-disconnected-underline = #f90000
+label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = ﲁ

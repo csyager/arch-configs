@@ -200,3 +200,6 @@ exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # polybar
 exec_always --no-startup-id /home/connor/.config/polybar/launch.sh
+
+# polychromatic
+exec_always --no-startup-id polychromatic-tray-applet

@@ -1,0 +1,69 @@
+window.opacity = 0.7
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Control"
+
+[terminal]
+
+[colors.bright]
+black = "#575b70"
+blue = "#caa9fa"
+cyan = "#9aedfe"
+green = "#5af78e"
+magenta = "#ff92d0"
+red = "#ff6e67"
+white = "#e6e6e6"
+yellow = "#f4f99d"
+
+[colors.normal]
+black = "#000000"
+blue = "#caa9fa"
+cyan = "#8b39fd"
+green = "#50fa7b"
+magenta = "#ff79c6"
+red = "#ff5555"
+white = "#bfbfbf"
+yellow = "#f1fa8c"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#16db65"
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[keyboard]
+
+[terminal.shell]
+args = ["--login"]
+program = "/bin/zsh"

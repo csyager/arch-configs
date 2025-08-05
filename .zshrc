@@ -131,3 +131,34 @@ bindkey '^ ' autosuggest-accept
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export PATH=$PATH:$HOME/.toolbox/bin:/apollo/sbin
+
+alias bb="brazil-build"
+alias bba='brazil-build apollo-pkg'
+alias bre='brazil-runtime-exec'
+alias brc='brazil-recursive-cmd'
+alias bws='brazil ws'
+alias bwsuse='bws use --gitMode -p'
+alias bwscreate='bws create -n'
+alias brc=brazil-recursive-cmd
+alias bbr='brc brazil-build'
+alias bball='brc --allPackages'
+alias bbb='brc --allPackages brazil-build'
+alias bbra='bbr apollo-pkg'
+alias sshc='ssh dev-dsk-cyager-2b-1dd3f929.us-west-2.amazon.com'
+alias ssha='ssh connor@home.connoryager.com'
+alias adac='ada credentials update --provider isengard --role admin --account 189735561437 --once'
+
+alias odin="ssh -f -N -L 2009:localhost:2009 cyager-clouddesk.aka.corp.amazon.com"
+alias odin_tunnel_start="ssh -L 2009:localhost:2009 cyager-clouddesk.aka.corp.amazon.com -N -f -T -M -S $SOCK_FILE -o ExitOnForwardFailure=yes"
+alias odin_tunnel_stop="ssh -S $SOCK_FILE -O exit cyager-clouddesk.aka.corp.amazon.com"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH=$PATH:$HOME/workplace/.odin-tools/env/OdinRetrievalScript-1.0/runtime/bin
+export PATH="$PATH:/opt/homebrew/opt/sqlite/bin"
+
+export PATH="/opt/homebrew/opt/pythonlibexec/bin:$PATH"
+
+# Set up mise for runtime management
+eval "$(mise activate zsh)"

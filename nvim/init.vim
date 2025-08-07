@@ -1,39 +1,29 @@
 set nocompatible              " required
 filetype off                  " required
 
+" use python virtual env
+let g:python3_host_prog = expand('~/.config/nvim/venv/bin/python')
+
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
 call plug#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plug 'gmarik/Vundle.vim'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
-" Plug 'valloric/youcompleteme'
+"YouCompleteMe autocompletion
+Plug 'valloric/youcompleteme'
+
+" native lsp-config (using this instead of CoC)
+Plug 'neovim/nvim-lspconfig'
 
 " Plugin 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
-
-" auto-completion
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
 
 " jdtls
 Plug 'mfussenegger/nvim-jdtls'
 
 " CoC
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Java LSP
-" Plugin 'prabirshrestha/vim-lsp'
-" Plugin 'mattn/vim-lsp-settings'
-" Plugin 'prabirshrestha/asyncomplete.vim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required
